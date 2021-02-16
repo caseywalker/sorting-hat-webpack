@@ -1,14 +1,11 @@
-// USE WITH FIREBASE AUTH
-// import checkLoginStatus from './helpers/auth';
+import initialCall from './components/initialLoad';
+import domEvents from './helpers/domEvents';
 
 import '../styles/main.scss';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = '<h1>HELLO! You are up and running!</h1>';
-  console.warn('YOU ARE UP AND RUNNING!');
-
-  // USE WITH FIREBASE AUTH
-  // checkLoginStatus();
+  initialCall();
+  domEvents();
 };
 
 init();
